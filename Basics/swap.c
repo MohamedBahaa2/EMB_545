@@ -2,7 +2,6 @@
 
 int main(){
     //swap using addition and subtraction
-    printf ("\n\nswapping using +/-\n------------------------------------------");
    
     int x = 5, y= 6;
     
@@ -19,8 +18,7 @@ int main(){
     
     //Using XOR bitwise operator '^'
     
-    printf ("\n\nswapping using XOR\n------------------------------------------");
-    
+   
     x = 10; y = 20;
     
     printf ("\n%d %d before swapping", x, y);
@@ -33,8 +31,7 @@ int main(){
 
     //Using multiplication and division
     
-    printf ("\n\nswapping using multiplication and division\n------------------------------------------");
-    
+   
     x = 3; y = 5;
     printf ("\n%d %d before swapping", x, y);
     x *= y;     // x = Xi.y -->> x is now the product of both Xi and y
@@ -45,7 +42,7 @@ int main(){
     
     
     //Using a temporary variable
-    printf ("\n\nswapping using a temporary variable\n------------------------------------------");
+    
     x = 15; y = 100;
 
     printf ("\n%d %d before swapping", x, y);
