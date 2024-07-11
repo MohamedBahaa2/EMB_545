@@ -5,7 +5,7 @@ int main(){
     printf("please enter a number: ");
     scanf("%hhu",&x);
 
-    x &= 0x01 << 2;
+    x &= ~(0x01 << 2);
     
     printf("%hhu",x);
 
