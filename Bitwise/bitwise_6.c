@@ -23,7 +23,7 @@ int main(){
     x |= 0x22; // set their positions to 1
 
     x &= b2 << 6; //put bit 2 in position 6
-    x &= b6 <<2; //put bit 6 in position 2
+    x &= b6 << 2; //put bit 6 in position 2
 
     printf("%hhu",x);
 
