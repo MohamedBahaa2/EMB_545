@@ -13,11 +13,13 @@ void binout(char n){
 
 
 char reverse(char num){
-    int j = 7;
-    char bit_l;
-    char bit_r;
-    for (int i = 0; i<4;i++){
-        
+   /* hard solution that was rethough and optimized using simpler logic
+     int j = 7;
+     char bit_l;
+     char bit_r;
+     
+     for (int i = 0; i<4;i++){
+       
         bit_r = (num>>i) & 0x01;
         bit_l = (num>>j) & 0x01;
 
@@ -38,9 +40,16 @@ char reverse(char num){
         }
 
         j--;
+        
     }
-   
-    return num;
+   */
+    char reversed_num;
+    for (int i = 0; i <8 ; i++){
+        if ((num>>i)&1){
+            reversed_num |= (1 << (7-i));
+        }
+    }
+    return reversed_num;
 }
 
 
