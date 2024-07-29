@@ -3,8 +3,7 @@
 #include"stack.h"
 
 int main(){
-    Stack* stk = (Stack*)malloc(100*sizeof(Stack));
-    create_stack(stk);
+    Stack* stk = create_stack();
 
     push(stk,10);
     push(stk,20);
