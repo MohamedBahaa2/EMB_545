@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 Stack* create_stack(){
-    Stack* newStack = (Stack*)malloc(100*sizeof(Stack));
+    Stack* newStack = (Stack*)malloc(sizeof(Stack));
     newStack -> top = NULL;
     newStack -> size = 0;
     return newStack;
