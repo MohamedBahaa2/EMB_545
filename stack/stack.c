@@ -1,49 +1,6 @@
 #include<stdlib.h>
 #include "stack.h"
 #include <stdio.h>
-/*
-typedef struct stack Stack;
-
-struct stack{
-    int size;
-    Element *arr [];
-};
-
-typedef struct element Element;
-
-struct element{
-    int index;
-    int data;
-    Element* next;
-};
-
-
-Element* push(int data, Stack *s){
-    
-    Element* newElement = (Element*)malloc(sizeof(Element));
-    
-    if (newElement != NULL){
-        newElement -> data = data;
-    
-        if (s -> size == 0){
-            newElement -> index = s -> size;
-            (s -> size)++;
-            newElement -> next = NULL;
-        }
-        else{
-            (s -> size)++;
-            newElement -> index = s -> size;
-            }
-            
-    }
-
-    return newElement;
-
-
-}
-
-typedef struct stack Stack;
-*/
 
 void create_stack(Stack* newStack){
     newStack -> top = NULL;
