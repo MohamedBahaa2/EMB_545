@@ -18,7 +18,7 @@
 
 
     //prototypes
-    void create_stack(Stack*); //creates stack
+    Stack* create_stack(); //creates stack
 
     void push(Stack* ,int); //adds elem at index 0
 
