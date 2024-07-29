@@ -2,9 +2,11 @@
 #include "stack.h"
 #include <stdio.h>
 
-void create_stack(Stack* newStack){
+Stack* create_stack(){
+    Stack* newStack = (Stack*)malloc(100*sizeof(Stack));
     newStack -> top = NULL;
     newStack -> size = 0;
+    return newStack;
 }
 
 void push(Stack* stk, int data){
