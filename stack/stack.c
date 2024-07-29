@@ -63,6 +63,7 @@ void display(Stack* stk){
         printf("\nelement %d of the stack is%d",i,temp->data);
         temp = temp ->next;
     }
+    free(temp);
 }
 
 
