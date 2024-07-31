@@ -8,9 +8,9 @@ u8 used_size = 0;
 const u8 MAX_SIZE = 10;
 
 void initialize_database(){
-    if (data_base == NULL) {
+   
         data_base = (student*)calloc(MAX_SIZE, sizeof(student));
-    }
+
 }
 
 Bool isFull() {
