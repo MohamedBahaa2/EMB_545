@@ -1,5 +1,6 @@
 #include "STD.h"
 #include "SDB.h"
+#include <stdlib.h>
 
 student *data_base = (student*)calloc(10,sizeof(student));
 

@@ -1,18 +1,11 @@
 #include "SDB.h"
 #include "STD.h"
+#include <stdlib.h>
 
 void app(){
     while(1){
         u8 entry;
-        printf("\n1. To add entry, enter 1
-                \n2. To get used size in database, enter 2
-                \n3. To read student data, enter 3
-                \n4. To get the list of all student IDs, enter 4
-                \n5. To check is ID is existed, enter 5
-                \n6. To delete student data, enter 6
-                \n7. To check is database is full, enter 7
-                \n8. To exit enter 0");
-        
+        printf("\n1. To add entry, enter 1\n2. To get used size in database, enter 2\n3. To read student data, enter 3\n4. To get the list of all student IDs, enter 4\n5. To check is ID is existed, enter 5\n6. To delete student data, enter 6\n7. To check is database is full, enter 7\n8. To exit enter 0"
         scanf("%d",&entry);
         action(entry);
     }

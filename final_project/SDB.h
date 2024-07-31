@@ -1,5 +1,6 @@
 #ifndef  _SDB_H_
 #define _SDB_H_
+#include"STD.h"
 
 typedef struct SimpleDb
 {
