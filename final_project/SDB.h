@@ -1,4 +1,6 @@
-//#include"STD.h"
+#ifndef  _SDB_H_
+#define _SDB_H_
+
 typedef struct SimpleDb
 {
 u32 Student_ID;
@@ -25,3 +27,5 @@ Bool readEntry(u32);
 void getList(u8*, u32*);
 
 Bool idExists(u32);
+
+#endif
