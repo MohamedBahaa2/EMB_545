@@ -1,9 +1,8 @@
-#include "app.h"
+#include "APP.h"
 #include "STD.h"
 #include "SDB.h"
 
-int main(){
-
+int main() {
     app();
     return 0;
 }
