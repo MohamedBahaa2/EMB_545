@@ -11,3 +11,17 @@ u32 Course3_ID;
 u32 Course3_grade;
 } student;
 
+
+Bool isFull();
+
+u8 get_used_size();
+
+Bool addEntry();
+
+void deletEntry(u32);
+
+Bool readEntry(u32);
+
+void getList(u8*, u32*);
+
+Bool idExists(u32);
