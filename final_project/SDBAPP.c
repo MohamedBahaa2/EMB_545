@@ -3,16 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void app() {
-    initialize_database();
-    while (1) {
-        u8 entry;
-        printf("\n1. To add entry, enter 1\n2. To get used size in database, enter 2\n3. To read student data, enter 3\n4. To get the list of all student IDs, enter 4\n5. To check if ID is existed, enter 5\n6. To delete student data, enter 6\n7. To check if database is full, enter 7\n8. To exit enter 0\n");
-        scanf("%hhu", &entry);  // Use %hhu for unsigned char
-        action(entry);
-    }
-}
-
 void action(u8 entry) {
     switch (entry) {
         case 1:
@@ -76,5 +66,15 @@ void action(u8 entry) {
             exit(0);
         default:
             break;
+    }
+}
+
+void app() {
+    initialize_database();
+    while (1) {
+        u8 entry;
+        printf("\n1. To add entry, enter 1\n2. To get used size in database, enter 2\n3. To read student data, enter 3\n4. To get the list of all student IDs, enter 4\n5. To check if ID is existed, enter 5\n6. To delete student data, enter 6\n7. To check if database is full, enter 7\n8. To exit enter 0\n");
+        scanf("%hhu", &entry);  // Use %hhu for unsigned char
+        action(entry);
     }
 }
